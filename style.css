@@ -1,0 +1,240 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:'Poppins', sans-serif;
+  background:#fffaf8;
+  color:#444;
+}
+
+header{
+  width:100%;
+  padding:20px 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:fixed;
+  top:0;
+  background:rgba(255,255,255,0.85);
+  backdrop-filter:blur(10px);
+  z-index:1000;
+}
+
+.logo{
+  font-size:28px;
+  font-family:'Cormorant Garamond', serif;
+  font-weight:700;
+  color:#d88b9a;
+}
+
+nav a{
+  text-decoration:none;
+  margin-left:20px;
+  color:#555;
+  font-weight:500;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#d88b9a;
+}
+
+section{
+  padding:120px 8%;
+}
+
+.hero{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:50px;
+  align-items:center;
+  min-height:100vh;
+}
+
+.hero h1{
+  font-size:72px;
+  font-family:'Cormorant Garamond', serif;
+  color:#d88b9a;
+  margin-bottom:20px;
+}
+
+.hero p{
+  line-height:1.8;
+  margin-bottom:20px;
+}
+
+.hero-image img,
+.about-image img{
+  width:100%;
+  border-radius:25px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+.home-list ul,
+.visi-misi ul{
+  margin-top:10px;
+  padding-left:20px;
+}
+
+.home-list li,
+.visi-misi li{
+  margin-bottom:8px;
+}
+
+.about-section{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+  background:#fff;
+}
+
+.about-text h2,
+.produk-section h2,
+.contact-box h2{
+  font-size:50px;
+  font-family:'Cormorant Garamond', serif;
+  color:#d88b9a;
+  margin-bottom:20px;
+}
+
+.about-text p{
+  line-height:1.8;
+  margin-bottom:15px;
+}
+
+.produk-section{
+  text-align:center;
+}
+
+.produk-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+  margin-top:50px;
+}
+
+.card{
+  background:white;
+  border-radius:25px;
+  overflow:hidden;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+  transition:0.4s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+
+.card img{
+  width:100%;
+  height:320px;
+  object-fit:cover;
+}
+
+.card h3{
+  margin-top:20px;
+  font-size:28px;
+  font-family:'Cormorant Garamond', serif;
+  color:#d88b9a;
+}
+
+.card p{
+  padding:15px 20px;
+  line-height:1.7;
+}
+
+.card span{
+  display:block;
+  margin-bottom:25px;
+  font-weight:600;
+  color:#555;
+}
+
+.contact-section{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#fff;
+}
+
+.contact-box{
+  background:white;
+  width:500px;
+  padding:50px;
+  border-radius:30px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+  text-align:center;
+}
+
+form{
+  display:flex;
+  flex-direction:column;
+}
+
+input{
+  padding:15px;
+  margin-bottom:20px;
+  border:none;
+  border-radius:15px;
+  background:#f7f3f2;
+  font-size:16px;
+}
+
+button{
+  padding:15px;
+  border:none;
+  border-radius:15px;
+  background:#d88b9a;
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+button:hover{
+  background:#c26e80;
+}
+
+#hasil{
+  margin-top:20px;
+  line-height:1.8;
+}
+
+footer{
+  text-align:center;
+  padding:30px;
+  background:#f9ecef;
+  color:#777;
+}
+
+@media(max-width:900px){
+
+  .hero,
+  .about-section{
+    grid-template-columns:1fr;
+  }
+
+  .hero h1{
+    font-size:55px;
+  }
+
+  .about-text h2,
+  .produk-section h2,
+  .contact-box h2{
+    font-size:40px;
+  }
+
+  header{
+    flex-direction:column;
+  }
+
+  nav{
+    margin-top:10px;
+  }
+
+}
